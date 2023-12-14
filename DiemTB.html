@@ -9,7 +9,21 @@
     let a = +prompt('nhập vào đểm toán:');
     let b = +prompt('nhập vào đểm lý:');
     let c = +prompt('nhập vào đểm hóa:');
-    alert('điểm trung bình 3 môn: '(a+b+c)/3);
+    alert('điểm trung bình 3 môn: '+(a+b+c)/3);
+</script>
+<h1>Bài 2</h1>
+<input type="text" id="st1">
+<input type="text" id="st2">
+<input type="text" id="st3">
+<button onclick="codeDTB()">Tính điểm trung bình</button>
+<h1 id="KQ"></h1>
+<script>
+    function codeDTB() {
+        let e = +document.getElementById('st1').value;
+        let f = +document.getElementById('st2').value;
+        let g = +document.getElementById('st3').value;
+        document.getElementById("KQ").innerHTML = 'ĐIểm trung bình là:' + (e + f + g)/3;
+    }
 </script>
 </body>
 </html>
