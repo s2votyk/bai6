@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>cocultor</h2>
+<input type="text" id="st1">
+<input type="text" id="st2">
+<br>
+<br>
+<button onclick="phepcong()">addtion(+)</button>
+<button onclick="pheptru()">subtraction(-)</button>
+<button onclick="phepnhan()">multiplication(X)</button>
+<button onclick="phepchia()">division(/)</button>
+<h1 id="KQ"></h1>
+<script>
+    function phepcong(){
+        let a = +document.getElementById('st1').value
+        let b = +document.getElementById('st2').value
+        document.getElementById("KQ").innerHTML = "Result addtion: " + (a+b)
+    }function pheptru(){
+        let a = document.getElementById('st1').value
+        let b = document.getElementById('st2').value
+        document.getElementById("KQ").innerHTML = "Result subtraction: " + (a-b)
+    }function phepnhan(){
+        let a = document.getElementById('st1').value
+        let b = document.getElementById('st2').value
+        document.getElementById("KQ").innerHTML = "Result addtion: " + (a*b)
+    }function phepchia(){
+        let a = document.getElementById('st1').value
+        let b = document.getElementById('st2').value
+        document.getElementById("KQ").innerHTML = "Result addtion: " + (a/b)
+    }
+</script>
+</body>
+</html>
